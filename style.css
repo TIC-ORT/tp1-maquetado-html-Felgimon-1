@@ -1,0 +1,130 @@
+:root {
+    --lr-color: rgb(233, 38, 24);
+    --lb-color: rgb(26, 26, 26);
+    --dg-color: rgb(51, 51, 51);
+    --g-color: rgb(78, 78, 78);
+    --lg-color: rgb(186, 173, 173);
+    --w-color: white;
+}
+
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+.downHeader,
+header,
+main,
+footer {
+    width: 100%;
+}
+
+header {
+    height: 7%;
+    background-color: var(--dg-color);
+    padding: 1vh 2vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input,
+button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.subHL,
+.subHR {
+    height: 90%;
+    width: 22%;
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.subHR {
+    width: 48%;
+}
+
+.BL {
+    width: 3.5vw;
+    height: 80%;
+    background-color: var(--lb-color);
+}
+
+.TRI {
+    background-color: var(--w-color);
+    cursor: text;
+    width: 17vw;
+}
+
+button {
+    background-color: var(--lb-color);
+    width: 5vw;
+    height: 60%;
+}
+
+nav {
+    background-color: var(--lb-color);
+    width: 3.5vw;
+    height: 60%;
+}
+
+.downHeader {
+    height: 15%;
+    background-color: var(--lb-color);
+}
+
+
+main {
+    height: 62%;
+    background-color: var(--g-color);
+
+}
+
+.LeftSide {
+   width: 35%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+aside {
+    width: 85%;
+    height: 77%;
+    background-color: var(--dg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+span {
+    width: 100%;
+    height: 8%;
+    font-size: 1rem;
+    padding: 0 2vw;
+    transition: background-color 1s;
+    cursor: pointer;
+    text-align: start;
+    display: flex;
+    align-items: center;
+    color: var(--w-color);
+}
+
+footer {
+    height:16%;
+    background-color: var(--dg-color);
+}
