@@ -1,5 +1,5 @@
 :root {
-    --lr-color: rgb(233, 38, 24);
+    --lr-color: rgb(236, 77, 56);
     --lb-color: rgb(26, 26, 26);
     --dg-color: rgb(51, 51, 51);
     --g-color: rgb(78, 78, 78);
@@ -29,11 +29,10 @@ footer {
 header {
     height: 7%;
     background-color: var(--dg-color);
-    padding: 1vh 2vw;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 input,
@@ -45,39 +44,33 @@ button {
 
 .subHL,
 .subHR {
-    height: 90%;
-    width: 22%;
+    height: 80%;
+    width: 27%;
     display: flex; 
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .subHR {
     width: 48%;
 }
 
-.BL {
-    width: 3.5vw;
-    height: 80%;
-    background-color: var(--lb-color);
-}
-
-.TRI {
+.subHR > input {
     background-color: var(--w-color);
     cursor: text;
     width: 17vw;
 }
 
-button {
+.subHR > button{
     background-color: var(--lb-color);
     width: 5vw;
-    height: 60%;
+    height: 40%;
 }
 
-nav {
+.subHL > div {
     background-color: var(--lb-color);
-    width: 3.5vw;
+    width: 4vw;
     height: 60%;
 }
 
@@ -108,10 +101,9 @@ aside {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: flex-start;
 }
 
-span {
+aside > span {
     width: 100%;
     height: 8%;
     font-size: 1rem;
@@ -122,6 +114,19 @@ span {
     display: flex;
     align-items: center;
     color: var(--w-color);
+}
+
+aside > span::before {
+    content: "•";
+    padding-right: 0.7vw;
+}
+
+aside > span:hover {
+    background-color: var(--lr-color);
+}
+
+aside > span:nth-child(2) {
+    background-color: var(--lr-color);
 }
 
 footer {
