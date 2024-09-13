@@ -146,7 +146,7 @@ main {
 .LeftSide > aside > span {
     width: 100%;
     height: 8%;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     padding: 0 2vw;
     transition: background-color 1s;
     cursor: pointer;
@@ -187,7 +187,7 @@ main {
     justify-content: space-evenly;
 }
 
-.RightSide > aside > section > video {
+.RightSide > aside > section > iframe {
     width: 100%;
     height: 100%;
     cursor: pointer;
@@ -195,6 +195,7 @@ main {
 
 .RightSide > aside > small {
     font-size: 5rem;
+    color: var(--w-color);
 }
 
 .RightSide > aside > section {
